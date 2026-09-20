@@ -6,7 +6,7 @@ description:
 week: 10
 date: 2027-04-26
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - your setup bootstraps onto a fresh machine from your repository
   - you have timed the rebuild and logged every manual fix it needed

@@ -6,7 +6,7 @@ description:
 week: 2
 date: 2027-03-01
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - you can name every program in your desktop stack and what it does
   - you have chosen X11 or Wayland and can say why

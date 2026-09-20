@@ -6,7 +6,7 @@ description:
 week: 5
 date: 2027-03-22
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - your terminal and at least two other programs share one palette
   - your foreground and background meet a contrast standard you can name

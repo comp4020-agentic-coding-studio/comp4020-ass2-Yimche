@@ -6,7 +6,7 @@ description:
 week: 10
 date: 2027-04-26
 teachers:
-  - idris-fenn
+  - shelly-powell
 slides: /decks/week-10/
 related:
   - sessions/10-reproducibility

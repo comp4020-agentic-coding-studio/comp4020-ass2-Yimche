@@ -6,7 +6,7 @@ description:
 week: 9
 date: 2027-04-19
 teachers:
-  - marisol-quaye
+  - alec-criddy
 slides: /decks/week-09/
 related:
   - sessions/09-minimal-maximal

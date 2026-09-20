@@ -6,7 +6,7 @@ description:
 week: 5
 date: 2027-03-22
 teachers:
-  - marisol-quaye
+  - alec-criddy
 slides: /decks/week-05/
 related:
   - sessions/05-palette

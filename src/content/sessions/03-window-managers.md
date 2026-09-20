@@ -6,7 +6,7 @@ description:
 week: 3
 date: 2027-03-08
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - you have a window manager running with a config under git
   - you can move, resize, and switch windows without the mouse

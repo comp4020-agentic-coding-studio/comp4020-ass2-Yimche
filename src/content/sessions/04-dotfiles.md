@@ -6,7 +6,7 @@ description:
 week: 4
 date: 2027-03-15
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - your config lives in one git repository with a readable history
   - the repository has a README that explains its structure

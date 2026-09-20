@@ -6,7 +6,7 @@ description:
 week: 12
 date: 2027-05-10
 teachers:
-  - marisol-quaye
+  - alec-criddy
 spec:
   - your finished rice is presented to the room with its screenshot and defence
   - you can answer questions the screenshot cannot answer on its own

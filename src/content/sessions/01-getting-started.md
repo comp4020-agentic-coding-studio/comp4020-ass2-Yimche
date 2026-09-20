@@ -6,7 +6,7 @@ description:
 week: 1
 date: 2027-02-22
 teachers:
-  - marisol-quaye
+  - alec-criddy
 spec:
   - you have a machine, real or virtual, you are willing to reinstall
   - the course site builds and previews on your machine

@@ -6,7 +6,7 @@ description:
 week: 9
 date: 2027-04-19
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - you have pushed your setup hard toward minimalism or maximalism
   - you can distinguish your choice from its failure mode

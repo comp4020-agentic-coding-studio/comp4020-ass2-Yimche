@@ -6,7 +6,7 @@ description:
 week: 6
 date: 2027-03-29
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - your terminal and editor render a font you chose deliberately
   - icons in your bar and prompt come from a patched font that renders cleanly

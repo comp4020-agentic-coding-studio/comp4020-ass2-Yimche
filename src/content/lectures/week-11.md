@@ -6,7 +6,7 @@ description:
 week: 11
 date: 2027-05-03
 teachers:
-  - marisol-quaye
+  - alec-criddy
 slides: /decks/week-11/
 related:
   - sessions/11-time-audit

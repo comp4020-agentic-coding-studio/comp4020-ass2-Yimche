@@ -6,7 +6,7 @@ description:
 week: 11
 date: 2027-05-03
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - you have a defensible estimate of the hours this setup has cost
   - you have separated hours that saved time from hours that bought pleasure

@@ -6,7 +6,7 @@ description:
 week: 7
 date: 2027-04-05
 teachers:
-  - idris-fenn
+  - shelly-powell
 spec:
   - you have a working status bar wired to real system state
   - every module left in the bar is one you glanced at within a day

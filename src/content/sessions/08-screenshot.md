@@ -6,7 +6,7 @@ description:
 week: 8
 date: 2027-04-12
 teachers:
-  - marisol-quaye
+  - alec-criddy
 spec:
   - you have a composed screenshot and an honest one, side by side
   - you can name every deliberate choice visible in the composed frame

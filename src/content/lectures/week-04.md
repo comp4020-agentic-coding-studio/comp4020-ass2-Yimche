@@ -6,7 +6,7 @@ description:
 week: 4
 date: 2027-03-15
 teachers:
-  - idris-fenn
+  - shelly-powell
 slides: /decks/week-04/
 related:
   - sessions/04-dotfiles

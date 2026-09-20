@@ -6,7 +6,7 @@ description:
 week: 2
 date: 2027-03-01
 teachers:
-  - idris-fenn
+  - shelly-powell
 slides: /decks/week-02/
 related:
   - sessions/02-the-stack
