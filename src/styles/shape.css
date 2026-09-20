@@ -1,0 +1,16 @@
+/*
+ * Sharp corners everywhere. Rounded corners read as soft and consumer; a rice
+ * wants hard edges. The radius token covers everything the theme draws through
+ * it, and the catch-all squares off anything with a hardcoded radius, including
+ * avatars and images. Injected unlayered through brandCss.
+ */
+
+:root {
+  --at-border-radius: 0;
+}
+
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}

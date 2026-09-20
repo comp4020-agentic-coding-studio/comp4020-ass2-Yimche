@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import courseGraph from "astro-course-university";
 import universityTheme from "astro-theme-university";
 import { astromotion, deckRemarkPlugins } from "astromotion";
@@ -17,12 +17,31 @@ export default defineConfig({
   // and what a visitor clicks in agreement --- otherwise each click costs a
   // 301 on GitHub Pages.
   trailingSlash: "always",
+  // The whole site is set in JetBrains Mono. Register it here so the theme picks
+  // it up alongside its own pair and emits the @font-face; the full weight axis
+  // is loaded as one variable file so the light body weight and real bold both
+  // resolve. The tokens are repointed at it in src/styles/typography.css.
+  fonts: [
+    {
+      name: "JetBrains Mono",
+      cssVariable: "--font-jetbrains-mono",
+      provider: fontProviders.google(),
+      weights: ["100 800"],
+      styles: ["normal", "italic"],
+      fallbacks: ["monospace"],
+    },
+  ],
   integrations: [
     universityTheme({
       defaultLayout: "src/layouts/PageLayout.astro",
       // The whole brand choice: three colour tokens and a set of lockups. Keep
       // institutional brand packages and assets out of this fictional site.
-      brandCss: ["astro-theme-slop/slop.css", "/src/styles/catppuccin.css"],
+      brandCss: [
+        "astro-theme-slop/slop.css",
+        "/src/styles/catppuccin.css",
+        "/src/styles/typography.css",
+        "/src/styles/shape.css",
+      ],
       imageFormat: "avif",
       llmsTxt: true,
       // The theme owns the markdown plugin chain, so astromotion's slide
@@ -45,7 +64,7 @@ export default defineConfig({
     // name.
     astromotion({
       theme: "./src/decks/theme.css",
-      fontVariables: ["--font-public-sans"],
+      fontVariables: ["--font-jetbrains-mono"],
     }),
   ],
 });
