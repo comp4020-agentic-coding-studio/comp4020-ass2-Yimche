@@ -1,8 +1,13 @@
 ---
 import MdxPageLayout from "astro-theme-university/layouts/MdxPageLayout.astro";
 import { siteConfig } from "../site-config";
+
+// Let a page opt out of the description-as-lead paragraph with `lead: false`
+// in its frontmatter. Undefined leaves the theme default (lead shown) intact.
+const { frontmatter } = Astro.props as { frontmatter?: { lead?: boolean } };
+const lead = frontmatter?.lead;
 ---
 
-<MdxPageLayout siteConfig={siteConfig} {...Astro.props}>
+<MdxPageLayout siteConfig={siteConfig} {...Astro.props} lead={lead}>
   <slot />
 </MdxPageLayout>
