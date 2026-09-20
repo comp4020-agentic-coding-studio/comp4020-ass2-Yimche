@@ -1,8 +1,8 @@
 ---
-title: Opening lecture
+title: What Is Ricing
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  Week 1, the term's origins in car culture, the rise of r/unixporn, and the
+  desktop read as a manifesto
 week: 1
 date: 2027-02-22
 teachers:
@@ -12,19 +12,28 @@ related:
   - sessions/01-getting-started
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
+The word arrived as an insult. "Rice" meant Race Inspired Cosmetic
+Enhancements, aimed at drivers who bolted spoilers and body kits onto cars that
+were no faster for any of it. The Linux desktop borrowed the term, kept the
+irony, and turned it into a badge. To rice is to enhance the appearance of a
+thing whose performance you have not touched, and to be proud of it anyway.
 
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
+This first lecture sets the frame for the whole course. A riced desktop is not a
+preference, it is a manifesto: a set of claims about how software should look, how
+attention should be spent, and who is watching. We start with the community that
+made the practice visible, r/unixporn, and with the awkward fact hiding in its
+name. These images are made to be seen. Almost none of them were made to get
+work done.
 
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
+## In this lecture
 
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
+- where the term comes from, and why the irony still matters
+- the desktop as a statement rather than a setting
+- what r/unixporn rewards, and what it quietly ignores
+- the three claims the course will test: the desktop is a manifesto, the
+  screenshot is the artefact, reproducibility is the discipline
 
-## Outline
+## Before next week
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+Have a machine you are willing to break, real or virtual. Bring one screenshot
+you admire and a single sentence saying why.
