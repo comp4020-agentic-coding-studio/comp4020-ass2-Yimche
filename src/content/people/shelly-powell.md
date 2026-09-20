@@ -1,8 +1,8 @@
 ---
 title: Shelly Powell
 description:
-  The lab tutor. They run the weekly labs and read dotfiles the way other people
-  read poetry, which is to say slowly and with suspicion.
+  The lab tutor. They read a repository for whether a stranger could rebuild it
+  from nothing, and in the lab they are that stranger.
 affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: shelly.powell@slop.university
