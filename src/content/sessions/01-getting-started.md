@@ -1,36 +1,35 @@
 ---
 title: Getting started
 description:
-  The first session of the semester — what to have working before you arrive,
-  and what happens once you do
+  Week 1 studio, a machine you can break, the course toolchain running, and
+  something rough to show
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
 spec:
-  - your development environment runs the course's toolchain
-  - you can build and preview the site locally
-  - you have something, however rough, to show the class
+  - you have a machine, real or virtual, you are willing to reinstall
+  - the course site builds and previews on your machine
+  - you can show the class one screenshot you admire and say why
 ---
 
-<!-- STARTER_CONTENT: replace this session, then remove this comment. -->
+The first studio exists to remove every excuse before the real work starts. You
+leave with a machine you are not afraid of and a toolchain that runs.
 
-Replace this page. A session brief tells a student three things: what to bring,
-what will happen, and how to tell afterwards whether it went well.
+## Before the studio
 
-## Before the session
+Have a Linux machine you can afford to break, a virtual one is ideal, and a git
+account you can push to. Install the course toolchain and confirm the site builds
+locally.
 
-The `spec` above is the contract. Write each line so a reader can tell whether
-it has been met without asking you --- that is the difference between a spec and
-a wish.
+## In the studio
 
-## In the session
-
-Say how the time is actually spent, in the order it happens. If the session runs
-to a repeating shape --- a demo, then feedback, then work time --- name the
-parts and say roughly how long each takes. Students plan against it.
+We go around the room with the screenshot each of you brought and the one
+sentence saying why. Then we sketch, on paper, the setup each of you thinks you
+want. Nobody touches a config file. This is the last week the setup is still a
+plan rather than a problem.
 
 ## Afterwards
 
-Say what leaves the session: a mark, a piece of feedback, a decision about the
-next week's work.
+You leave with a working environment, a rough target, and a partner whose crits
+you will hear all semester.
