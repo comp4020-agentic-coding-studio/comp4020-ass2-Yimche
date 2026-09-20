@@ -58,18 +58,16 @@ body {
 
 .at-main {
   background-color: var(--at-bg);
+
+  /* The page grid gives the panel a left inset but no matching right one, so all
+     content, prose and figures and card grids alike, ends flush against the
+     right edge. Add a right inset of the same width to restore symmetry. On a
+     subgrid this shifts the end line inward while the Base still fills to
+     content-end, and it collapses to zero at the narrow breakpoint where the
+     inset token itself does. */
+  padding-inline-end: var(--at-content-inset);
 }
 
 .at-nav {
   background: var(--at-header-bg);
-}
-
-/*
- * The reading panel carries a left inset from the grid but ends flush with the
- * content on the right, so a card grid's right edge sits hard against the panel.
- * Mirror the inset on the right of the grid to match the left, using the same
- * token so it collapses to zero at the narrow breakpoint where the inset does.
- */
-.at-card-grid {
-  padding-inline-end: var(--at-content-inset);
 }

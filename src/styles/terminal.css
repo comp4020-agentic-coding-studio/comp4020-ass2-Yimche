@@ -77,10 +77,15 @@ a.at-card:hover {
 
 /* Home hero */
 .term-hero {
-  grid-column: full;
+  grid-column: inset-start / content-end;
   display: grid;
   grid-template-columns: subgrid;
-  margin-block-end: var(--at-spacing-xl);
+  /* Sit the hero on the same Base surface as the main panel below it, spanning
+     and inset the same way, so the two read as one continuous panel rather than
+     a darker band above the page. */
+  background-color: var(--at-bg);
+  padding-inline-end: var(--at-content-inset);
+  padding-block: var(--at-spacing-xl);
 }
 
 .term-window {
