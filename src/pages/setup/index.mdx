@@ -1,0 +1,110 @@
+---
+title: Setup
+description:
+  How to get a Linux environment you can rice, whether you already run Linux or
+  need a virtual machine on Windows or macOS, and what to install once you have
+  one.
+---
+
+# Setup
+
+Ricing needs a Linux desktop you are free to break, rebuild, and break again.
+This page gets you to that starting line. Pick the path that matches the machine
+you already own, install the short list of tools at the bottom, and you are ready
+for week one. When you have a working desktop, move on to [setting up your
+dotfiles repository](./dotfiles/), which is where the rest of the course lives.
+
+One rule before you start: whatever you do, keep your real work somewhere it
+cannot be lost. Back up anything you care about before you repartition a disk or
+install an operating system, and never learn this lesson the hard way in week
+eleven.
+
+## If you already run Linux
+
+You are done with the hard part. Any reasonably current distribution will rice
+beautifully, so do not switch distros for its own sake; the desktop you build
+sits on top of the distribution, not inside it. Arch and its derivatives are
+popular in this crowd because their wikis are excellent and their packages are
+current, but Fedora, openSUSE, Debian, and Ubuntu all reach exactly the same
+place. Use what you know.
+
+Confirm you can install packages, that you have a working internet connection,
+and that you are comfortable editing text files and running commands. That is the
+whole prerequisite. If you are on a full desktop environment such as GNOME or
+KDE, you can keep it installed and log into a separate session for your rice, so
+you always have a working desktop to fall back to.
+
+## If you have a spare machine or want to dual boot
+
+Running Linux on real hardware gives you the best performance and the fewest
+surprises with graphics and compositing, which matters once you start layering
+effects. If you have an old laptop or a second drive, install Linux on the metal.
+Download a current image, write it to a USB stick with a tool such as Ventoy,
+Rufus, or the GNOME Disks writer, and follow the distribution's installer.
+
+Dual booting alongside Windows or macOS is possible and well documented, but it
+carries real risk to the operating system already on the disk. Only take this
+route if you are confident with partitioning, and only after your backup is done.
+If any of that sentence made you nervous, use a virtual machine instead.
+
+## If you are on Windows or macOS: use a virtual machine
+
+A virtual machine runs a whole Linux system in a window on the computer you
+already have. Nothing on your host is touched, you can throw the machine away and
+start over in minutes, and snapshots let you save a known-good state before you
+try something reckless. For this course it is the safest and most forgiving
+option, and it is the one to pick if you are unsure.
+
+Choose a hypervisor for your host:
+
+- **Windows.** VirtualBox is free and more than enough. VMware Workstation Player
+  is a capable alternative. Enable virtualisation in your firmware first if the
+  installer complains, and turn on the guest's 3D acceleration so the compositor
+  has something to work with.
+- **macOS on Apple Silicon (M1 and later).** UTM is free and built for this
+  hardware; Parallels Desktop is the paid, polished option. Install an ARM build
+  of your chosen distribution, since Intel images will not boot here.
+- **macOS on Intel.** VirtualBox, VMware Fusion, or UTM all work with the
+  ordinary 64-bit images.
+
+Then build the guest:
+
+1. Download a current Linux image, matching your architecture, from the
+   distribution's website.
+2. Create a new virtual machine and point it at that image. Give it at least
+   4 GB of memory and 2 CPU cores if you can spare them, more if your host is
+   comfortable; a rice with live effects appreciates the headroom.
+3. Allocate 30 GB or more of disk. Fonts, packages, and a few experiments add up.
+4. Turn on 3D acceleration in the machine's display settings before first boot.
+5. Install the distribution, then install the guest additions or SPICE tools for
+   your hypervisor so that resolution, shared clipboard, and smooth graphics
+   work.
+6. Take a snapshot the moment you have a clean, updated system. That snapshot is
+   the bare machine your final rice must rebuild from, so treat it as the ground
+   truth.
+
+A note on the Windows Subsystem for Linux: WSL is excellent for command-line
+work, but it is a poor fit for ricing a full graphical desktop, so reach for a
+real virtual machine instead.
+
+## What to install once you have Linux
+
+Whichever path you took, these are the pieces every rice is built from. Install
+them through your distribution's package manager; the package names vary slightly
+between distros, so check your distribution's documentation for the exact names.
+
+- **git**, for version control and for cloning the configurations you will learn
+  from. You will need it immediately for your dotfiles repository.
+- **A terminal emulator** you enjoy looking at, such as kitty, Alacritty, WezTerm,
+  or foot, since you will spend the term staring at it.
+- **A window manager or compositor** to rice. Tiling managers such as Hyprland,
+  Sway, i3, or bspwm are the usual starting points, but the choice is yours and
+  we cover it properly in the early weeks.
+- **A status bar and a launcher**, for example Waybar or Polybar with Rofi or
+  Wofi, so the desktop has somewhere to show information and something to launch
+  from.
+- **Fonts**, including a Nerd Font patched with icons, so bars and prompts can
+  render their glyphs.
+
+You do not need to decide on any of these today. Install git now, get your
+environment booting, and bring the rest of the questions to week one.

@@ -1,0 +1,105 @@
+---
+title: Setting up your dotfiles repository
+description:
+  How to turn the scattered configuration files behind your desktop into one
+  version-controlled, reproducible repository, which is the artefact the course
+  marks as the Dotfiles Repository.
+---
+
+# Setting up your dotfiles repository
+
+Your desktop is configured by dotfiles: the small text files, most of them living
+under your home directory and beginning with a dot, that tell each program how to
+look and behave. Left alone they scatter across your system and exist in exactly
+one copy, on one machine, one accident away from gone. This page turns them into a
+single git repository you can read, rebuild, and hand over.
+
+This is not busywork for the course's sake. The [Dotfiles
+Repository](../../assessments/dotfiles-repository/) is marked in its own right, on
+whether a marker can rebuild your desktop from it on a bare machine, and week four
+is given over to the craft of it. Start the repository now, in week one, and let
+it grow with the rice rather than reconstructing it in a panic at the end.
+
+## What belongs in it, and what does not
+
+In goes the configuration you write and change: the contents of `~/.config` for
+your window manager, bar, terminal, editor, and launcher, your shell's startup
+files, and any scripts that glue them together. Out stays anything secret or
+machine-generated: API tokens, SSH private keys, passwords, and caches. A leaked
+key in a public dotfiles repository is a genuinely bad day, and this repository is
+public by design, so keep secrets in a separate, untracked place and never commit
+them.
+
+## Two ways to lay it out
+
+There are two established approaches. Either is acceptable for the course; choose
+the one you understand, because you will have to defend it.
+
+### A repository plus a symlink manager
+
+Keep a plain folder, say `~/dotfiles`, with one subdirectory per program, and
+symlink its files into place. GNU Stow automates exactly this and is the gentlest
+way in.
+
+```sh
+mkdir ~/dotfiles
+cd ~/dotfiles
+# Move a program's config into a matching subfolder, then let Stow link it back.
+mkdir -p hypr/.config/hypr
+mv ~/.config/hypr/hyprland.conf hypr/.config/hypr/
+stow hypr
+```
+
+`stow hypr` creates the symlinks so the program still finds its file at the old
+path, while the real file lives in your repository. Repeat per program, and one
+`stow` command rebuilds the links on a fresh machine.
+
+### A bare repository tracking your home directory
+
+The other approach tracks files where they already sit, using a bare repository
+and an alias so it never interferes with any other git project.
+
+```sh
+git init --bare $HOME/.dotfiles
+alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dot config --local status.showUntrackedFiles no
+dot add ~/.config/hypr/hyprland.conf
+dot commit -m "add hyprland config"
+```
+
+You then use `dot` in place of `git` for these files. It keeps paths exactly as
+programs expect them, at the cost of a setup that reads as clever until you
+explain it, which is what the defence is for.
+
+## Getting it onto GitHub
+
+Whichever layout you chose, create an empty repository on GitHub named `dotfiles`
+and push to it.
+
+```sh
+cd ~/dotfiles
+git init
+git add .
+git commit -m "initial dotfiles"
+git branch -M main
+git remote add origin git@github.com:your-username/dotfiles.git
+git push -u origin main
+```
+
+Commit as you go, in small steps with honest messages, so the history reads as
+the story of how the desktop came to be. That history is part of what the marker
+reads.
+
+## Make it rebuildable, and say what you borrowed
+
+The repository is only finished when someone else can run it. Add a `README` that
+names your setup and lists the steps to bring it up on a bare machine, and, if you
+can, a short bootstrap script that installs packages and lays down the links, so
+the whole desktop comes back with one command.
+
+Finally, credit your sources. Almost every rice starts from someone else's
+configuration, and that is fine and expected. Note in your `README` which parts
+you forked and from where, so the marker can tell your decisions from your
+inheritance. The [course policies](../../policies/) spell out what honest
+attribution looks like, and the [Defence](../../assessments/the-defence/) is where
+you account for the choices in person.
