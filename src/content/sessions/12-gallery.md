@@ -1,7 +1,7 @@
 ---
 title: The gallery
 description:
-  Week 12 studio, the final gallery crit, where each setup goes up and its owner
+  Week 12 lab, the final gallery crit, where each setup goes up and its owner
   defends it to the room
 week: 12
 date: 2027-05-10
@@ -13,14 +13,14 @@ spec:
   - you can name what your desktop reveals about you, before the room does
 ---
 
-The last studio, and the one the whole semester was rehearsing for.
+The last lab, and the one the whole semester was rehearsing for.
 
-## Before the studio
+## Before the lab
 
 Bring the finished rice, reproducible from your repository, the composed
 screenshot and its defence, and the time audit.
 
-## In the studio
+## In the lab
 
 Each setup goes up in turn. You present, you defend, and the room asks the
 questions a photograph cannot field: why this manager, why this palette, what the

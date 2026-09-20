@@ -1,7 +1,7 @@
 ---
 title: The dotfiles repository
 description:
-  Week 4 studio, turn a pile of config into a repository someone else could
+  Week 4 lab, turn a pile of config into a repository someone else could
   read and rebuild
 week: 4
 date: 2027-03-15
@@ -13,14 +13,14 @@ spec:
   - a partner can find where any given setting lives without asking you
 ---
 
-The first studio marked toward the Dotfiles Repository. We treat the config as
+The first lab marked toward the Dotfiles Repository. We treat the config as
 what it is becoming: a codebase.
 
-## Before the studio
+## Before the lab
 
 Have your config under git with commit messages a stranger could follow.
 
-## In the studio
+## In the lab
 
 You swap repositories with a partner and try to understand each other's setups
 cold, with no narration. Wherever your partner gets lost is a documentation bug,

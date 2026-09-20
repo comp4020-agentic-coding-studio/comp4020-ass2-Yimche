@@ -1,7 +1,7 @@
 ---
 title: Type in the terminal
 description:
-  Week 6 studio, choose a typeface for the place you actually read, and know
+  Week 6 lab, choose a typeface for the place you actually read, and know
   why
 week: 6
 date: 2027-03-29
@@ -13,14 +13,14 @@ spec:
   - you can say whether you optimised for legibility or for feel
 ---
 
-The studio about the letters you stare at all day.
+The lab about the letters you stare at all day.
 
-## Before the studio
+## Before the lab
 
 Bring your two-font test: one chosen for legibility, one for feel, and a record
 of which you reached for while reading real code.
 
-## In the studio
+## In the lab
 
 We set up a patched font so your icons stop appearing as empty boxes, then read
 code together at different sizes and rendering settings to see where a font

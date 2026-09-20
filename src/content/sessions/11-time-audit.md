@@ -1,7 +1,7 @@
 ---
 title: The reckoning
 description:
-  Week 11 studio, put a real number on the hours, and decide honestly what they
+  Week 11 lab, put a real number on the hours, and decide honestly what they
   bought
 week: 11
 date: 2027-05-03
@@ -13,13 +13,13 @@ spec:
   - you have an outline of the Time Audit essay
 ---
 
-The studio where the arithmetic finally happens.
+The lab where the arithmetic finally happens.
 
-## Before the studio
+## Before the lab
 
 Bring your reconstructed hours for the semester, however alarming the total.
 
-## In the studio
+## In the lab
 
 We do the accounting out loud. Each of you states the number, then we sort the
 hours into the ones that will pay themselves back, the ones that bought only the

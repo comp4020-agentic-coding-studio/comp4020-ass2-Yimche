@@ -1,7 +1,7 @@
 ---
 title: Reading the stack
 description:
-  Week 2 studio, name every layer of your desktop, and choose the stack you
+  Week 2 lab, name every layer of your desktop, and choose the stack you
   will build on
 week: 2
 date: 2027-03-01
@@ -13,15 +13,15 @@ spec:
   - you have installed a bare compositor and reached a usable session
 ---
 
-The studio where the desktop stops being one thing and becomes the several
+The lab where the desktop stops being one thing and becomes the several
 programs it actually is.
 
-## Before the studio
+## Before the lab
 
 Bring the stack inventory from last week's lecture: every layer named, and the
 one program you expect to fight most.
 
-## In the studio
+## In the lab
 
 We install a bare compositor together and reach a session with nothing riced yet,
 so you can see the plain material before you decorate it. You commit to X11 or

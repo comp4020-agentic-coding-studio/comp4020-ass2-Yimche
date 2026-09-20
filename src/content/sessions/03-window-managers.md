@@ -1,7 +1,7 @@
 ---
 title: Choosing a manager
 description:
-  Week 3 studio, commit to a window manager and write the first configuration
+  Week 3 lab, commit to a window manager and write the first configuration
   you will have to defend
 week: 3
 date: 2027-03-08
@@ -13,14 +13,14 @@ spec:
   - you can state the layout policy you chose and the one you rejected
 ---
 
-The studio where you pick a theory of work and start living inside it.
+The lab where you pick a theory of work and start living inside it.
 
-## Before the studio
+## Before the lab
 
 Bring notes from your day on a tiling manager and your day on a floating one, and
 the moment in each where the software disagreed with you.
 
-## In the studio
+## In the lab
 
 You commit to a manager and write a first config: keybindings, workspaces, and a
 layout policy you can name. We crit these in pairs, and the only question that

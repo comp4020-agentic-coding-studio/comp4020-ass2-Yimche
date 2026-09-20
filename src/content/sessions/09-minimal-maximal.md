@@ -1,7 +1,7 @@
 ---
 title: Two churches
 description:
-  Week 9 studio, push your setup to one aesthetic pole, then defend where it
+  Week 9 lab, push your setup to one aesthetic pole, then defend where it
   landed
 week: 9
 date: 2027-04-19
@@ -13,14 +13,14 @@ spec:
   - you can argue your position against a partner holding the other
 ---
 
-The studio where taste has to become a position you can defend.
+The lab where taste has to become a position you can defend.
 
-## Before the studio
+## Before the lab
 
 Bring your setup after a day pushed toward one pole, with notes on what you
 gained and what you missed.
 
-## In the studio
+## In the lab
 
 We pair a minimalist with a maximalist for each crit and let them argue. The job
 is not to win but to tell your choice apart from its failure mode: clarity from

@@ -1,7 +1,7 @@
 ---
 title: Building the bar
 description:
-  Week 7 studio, build a status bar, then earn back every module by proving you
+  Week 7 lab, build a status bar, then earn back every module by proving you
   read it
 week: 7
 date: 2027-04-05
@@ -13,13 +13,13 @@ spec:
   - you can defend each surviving module against being moved on demand
 ---
 
-The studio where you build a dashboard and then dismantle most of it.
+The lab where you build a dashboard and then dismantle most of it.
 
-## Before the studio
+## Before the lab
 
 Build a first bar with every module you are tempted by. Bring it overfull.
 
-## In the studio
+## In the lab
 
 You run the full bar for the session, then we go module by module: what did you
 actually glance at, what belongs behind a keybinding, what was there only because

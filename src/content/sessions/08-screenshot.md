@@ -1,7 +1,7 @@
 ---
 title: The screenshot workshop
 description:
-  Week 8 studio, compose the photograph the setup exists for, and start drafting
+  Week 8 lab, compose the photograph the setup exists for, and start drafting
   its defence
 week: 8
 date: 2027-04-12
@@ -13,15 +13,15 @@ spec:
   - you have a first draft of the Defence covering those choices
 ---
 
-The studio where the setup finally sits for its portrait, and where the Defence
+The lab where the setup finally sits for its portrait, and where the Defence
 begins.
 
-## Before the studio
+## Before the lab
 
 Bring two screenshots: your setup staged as if for r/unixporn, and the same
 desktop as it actually looks on a Tuesday.
 
-## In the studio
+## In the lab
 
 We treat the composed frame as a designed object: framing, staging, what to leave
 out, what a staged terminal is quietly claiming. Then you list every deliberate
