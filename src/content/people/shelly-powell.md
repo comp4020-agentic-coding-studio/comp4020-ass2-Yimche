@@ -7,8 +7,6 @@ affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: shelly.powell@slop.university
 contact: Ask during the lab, or email when a question cannot wait until the next one.
-photo: ./shelly-powell.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
 Shelly runs the weekly lab. They maintain a dotfiles repository that other

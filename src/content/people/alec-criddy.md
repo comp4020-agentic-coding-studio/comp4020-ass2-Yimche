@@ -7,8 +7,6 @@ affiliation: Slop University School of Invented Disciplines
 role: convenor
 email: alec.criddy@slop.university
 contact: Email for course-level questions; bring work to the weekly lab for feedback.
-photo: ./alec-criddy.avif
-photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
 Alec convenes the course and sets its weekly programme. They work on the
