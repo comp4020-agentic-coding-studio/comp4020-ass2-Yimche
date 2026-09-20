@@ -1,0 +1,59 @@
+---
+title: The Stack Beneath the Skin
+description: Week 2, X11 versus Wayland, the compositor's job, and what you actually theme
+---
+
+# The Stack Beneath the Skin
+
+Week 2. What a desktop is made of, before you change any of it.
+
+---
+
+{/* _class: impact */}
+
+## "The desktop" is a committee
+
+A display server, a compositor, a window manager, a bar, a launcher, a terminal,
+and the apps on top. Each is a separate program that agreed to cooperate.
+
+---
+
+## Who does what
+
+- **display server** hands out the screen and the input
+- **compositor** paints windows, and owns your shadows and gaps
+- **window manager** decides where windows go
+- **bar and launcher** are just more clients, drawn on top
+
+---
+
+## X11 and Wayland
+
+Two contracts, not two teams.
+
+- X11 is old, permissive, endlessly scriptable, which is why the tooling assumes it
+- Wayland is newer, stricter, and folds the compositor and display server together
+- Neither is a moral choice; the rest of your setup lives inside the one you sign
+
+---
+
+## Why the screenshot lies
+
+A photograph cannot tell you which stack produced it. The same look is reachable
+from either contract, by different means. Know which program you are talking to
+before a tutorial tells you to "just add this line".
+
+---
+
+{/* _class: impact */}
+
+# Name your layers
+
+You cannot theme what you cannot name.
+
+---
+
+## Before next week
+
+Identify the stack on the machine you brought last week. Name every layer, and
+find the one program you will spend the most time fighting.

@@ -7,6 +7,7 @@ week: 11
 date: 2027-05-03
 teachers:
   - marisol-quaye
+slides: /decks/week-11/
 related:
   - sessions/11-time-audit
   - assessments/time-audit
@@ -37,4 +38,4 @@ question the Time Audit will ask you to answer in writing.
 ## Before next week
 
 Reconstruct, as best you can, how many hours this semester's setup has cost you.
-Bring the number, however alarming, to the studio.
+Bring the number, however alarming, to the lab.

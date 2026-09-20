@@ -7,6 +7,7 @@ week: 8
 date: 2027-04-12
 teachers:
   - marisol-quaye
+slides: /decks/week-08/
 related:
   - sessions/08-screenshot
   - assessments/the-defence
@@ -37,4 +38,4 @@ asked to justify, and starting this week, you will be.
 ## Before next week
 
 Photograph your setup as if for r/unixporn, then again as it actually looks on a
-Tuesday. Bring both to the studio and be ready to account for the difference.
+Tuesday. Bring both to the lab and be ready to account for the difference.
