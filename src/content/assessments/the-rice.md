@@ -17,6 +17,7 @@ spec:
   - submitted by the deadline as a running setup and a repository a marker can rebuild
   - every layer is present and working, from compositor and window manager to bar, palette, and type
   - the work is original and yours, with all borrowed and AI-assisted parts declared
+  - accompanied by a short written report that argues for the setup and credits its sources
 related:
   - dotfiles-repository
 ---
@@ -41,3 +42,14 @@ between the decisions you made and the ones you inherited.
 A running setup, presented at the gallery in week 12, and the repository that
 regenerates it. The repository is marked separately as the Dotfiles Repository;
 here it is the desktop itself, as a whole, that is judged.
+
+## The report
+
+Alongside the running desktop and its repository, submit a short written report,
+no more than a couple of pages, that argues for the setup rather than merely
+describing it. Say what idea of a desktop the rice is chasing, why the window
+manager, palette, typeface, and bar serve that idea, and where you departed from
+the configurations you started from and why. The report is where a marker reads
+your intent, so that the desktop is judged as a set of decisions and not only as
+an image. Credit every borrowed and AI-assisted part here as well, in a form a
+marker can follow back to the original.
