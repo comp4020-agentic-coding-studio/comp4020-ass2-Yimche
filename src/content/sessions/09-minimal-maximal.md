@@ -22,7 +22,7 @@ gained and what you missed.
 
 ## In the lab
 
-We pair a minimalist with a maximalist for each crit and let them argue. The job
+We pair a minimalist with a maximalist and let them argue. The job
 is not to win but to tell your choice apart from its failure mode: clarity from
 avoidance, abundance from noise. By the end you should know which church you are
 in and be able to say why without apology.

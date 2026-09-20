@@ -1,7 +1,7 @@
 ---
 title: The gallery
 description:
-  Week 12 lab, the final gallery crit, where each setup goes up and its owner
+  Week 12 lab, the final gallery, where each setup goes up and its owner
   defends it to the room
 week: 12
 date: 2027-05-10
@@ -30,5 +30,5 @@ portrait it is.
 
 ## Afterwards
 
-You leave with a defended body of work, a semester of crits behind you, and
+You leave with a defended body of work, a semester of feedback behind you, and
 permission, at last, to stop configuring.

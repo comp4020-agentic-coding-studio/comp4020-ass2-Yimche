@@ -55,7 +55,7 @@ export const courseMeta = slopCourseMetaSchema.parse({
   startDate: "2027-02-22",
   endDate: "2027-05-28",
   description:
-    "A studio elective on ricing the Linux desktop: the compositors, window " +
+    "An elective on ricing the Linux desktop: the compositors, window " +
     "managers, dotfiles, palettes, type and status bars behind the screenshot. " +
     "You build one complete, reproducible, original setup, then account " +
     "honestly for the hours it cost you.",

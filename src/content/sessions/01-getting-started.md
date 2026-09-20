@@ -31,5 +31,5 @@ plan rather than a problem.
 
 ## Afterwards
 
-You leave with a working environment, a rough target, and a partner whose crits
-you will hear all semester.
+You leave with a working environment, a rough target, and a partner whose
+feedback you will hear all semester.

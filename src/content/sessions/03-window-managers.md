@@ -23,7 +23,7 @@ the moment in each where the software disagreed with you.
 ## In the lab
 
 You commit to a manager and write a first config: keybindings, workspaces, and a
-layout policy you can name. We crit these in pairs, and the only question that
+layout policy you can name. We review these in pairs, and the only question that
 matters is whether you can explain a choice rather than whether it is the choice
 your partner would have made.
 
