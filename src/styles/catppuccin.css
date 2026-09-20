@@ -63,3 +63,13 @@ body {
 .at-nav {
   background: var(--at-header-bg);
 }
+
+/*
+ * The reading panel carries a left inset from the grid but ends flush with the
+ * content on the right, so a card grid's right edge sits hard against the panel.
+ * Mirror the inset on the right of the grid to match the left, using the same
+ * token so it collapses to zero at the narrow breakpoint where the inset does.
+ */
+.at-card-grid {
+  padding-inline-end: var(--at-content-inset);
+}
