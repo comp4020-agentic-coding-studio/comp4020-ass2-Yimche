@@ -11,7 +11,6 @@ slides: /decks/week-12/
 related:
   - sessions/12-gallery
   - assessments/the-rice
-  - assessments/gallery
 ---
 
 We end where the first lecture pointed: the desktop as a portrait of its owner. A

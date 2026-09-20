@@ -19,7 +19,6 @@ spec:
   - the work is original and yours, with all borrowed and AI-assisted parts declared
 related:
   - dotfiles-repository
-  - the-defence
 ---
 
 The central work of the course. Over the semester you build one desktop and make
@@ -40,6 +39,5 @@ between the decisions you made and the ones you inherited.
 ## What you submit
 
 A running setup, presented at the gallery in week 12, and the repository that
-regenerates it. The repository is marked separately as the Dotfiles Repository,
-and the screenshot and its written defence as the Defence; here it is the desktop
-itself, as a whole, that is judged.
+regenerates it. The repository is marked separately as the Dotfiles Repository;
+here it is the desktop itself, as a whole, that is judged.

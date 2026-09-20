@@ -10,7 +10,6 @@ teachers:
 slides: /decks/week-08/
 related:
   - sessions/08-screenshot
-  - assessments/the-defence
 ---
 
 Here is the turn the course has been building toward. A rice is not finished when
