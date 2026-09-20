@@ -19,3 +19,26 @@
 body {
   font-weight: 300;
 }
+
+/*
+ * Nav overflow, set in the wider mono face. On desktop the theme means the nav
+ * links to scroll sideways inside their own track, but the list has no lower
+ * width and cannot shrink, so once the mono glyphs push the row past its width
+ * the search button wraps onto a second line at the far left instead. Letting
+ * the list shrink hands the overflow back to its own scroll track, and pinning
+ * the row to a single line keeps the search button in its place on the right.
+ */
+@media (width >= 640px) {
+  .at-nav-inner {
+    flex-wrap: nowrap;
+  }
+
+  .at-nav-links {
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .at-search-trigger {
+    flex-shrink: 0;
+  }
+}
