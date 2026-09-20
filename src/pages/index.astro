@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "astro-theme-university/layouts/BaseLayout.astro";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
+import riceShot from "../assets/images/hyprland-rice.png";
 
 const title = `${courseMeta.code}: ${courseMeta.title}`;
 // The home page renders its own terminal hero rather than the theme's image
@@ -51,6 +53,17 @@ const transitionName = "card-title-";
     returned.
   </p>
 
+  <figure class="rice-shot">
+    <Image
+      src={riceShot}
+      alt="A Hyprland desktop: Neovim editing a hyprpaper wallpaper script on the left, a btop system monitor and an audio visualiser on the right, over a monochrome wallpaper of a top-hatted figure."
+      widths={[640, 960, 1280, 1920]}
+      sizes="(min-width: 60rem) 60rem, 100vw"
+      loading="lazy"
+    />
+    <figcaption>One desktop, end to end: the dotfiles, the status readout, and the wallpaper, all of a piece.</figcaption>
+  </figure>
+
   <h2>Who it is for</h2>
   <p>
     Students who already live in a terminal and want to think about why, and
@@ -89,6 +102,24 @@ const transitionName = "card-title-";
     border-radius: 999px;
     color: var(--at-text-secondary);
     background: var(--at-bg-alt);
+    font-size: 0.9rem;
+  }
+
+  .rice-shot {
+    margin: 0 0 2.5rem;
+  }
+
+  .rice-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--at-border);
+    border-radius: var(--at-border-radius);
+  }
+
+  .rice-shot figcaption {
+    margin-top: 0.6rem;
+    color: var(--at-text-secondary);
     font-size: 0.9rem;
   }
 </style>
