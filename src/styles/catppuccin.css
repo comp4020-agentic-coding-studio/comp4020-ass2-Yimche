@@ -21,6 +21,10 @@
   --at-bg-alt: light-dark(#e6e9ef, #181825);
   --at-bg-elevated: light-dark(#ffffff, #313244);
 
+  /* The header sits on its own surface, one step deeper than the page.
+     Latte Crust against Mocha Crust. */
+  --at-header-bg: light-dark(#dce0e8, #11111b);
+
   /* Text. Latte text and subtexts against Mocha text and subtexts. */
   --at-text: light-dark(#4c4f69, #cdd6f4);
   --at-text-secondary: light-dark(#5c5f77, #bac2de);
@@ -40,4 +44,22 @@
   --at-warning-soft: light-dark(rgb(223 142 29 / 10%), rgb(249 226 175 / 14%));
   --at-error: light-dark(#d20f39, #f38ba8);
   --at-error-soft: light-dark(rgb(210 15 57 / 10%), rgb(243 139 168 / 14%));
+}
+
+/*
+ * Page depth. The page recedes to Mantle so the reading column, painted back
+ * to Base, lifts off it; the gutters either side of that column show the
+ * darker page. The header takes its own Crust surface. All three are
+ * Catppuccin surfaces, and each rule is unlayered so it wins over the theme.
+ */
+body {
+  background-color: var(--at-bg-alt);
+}
+
+.at-main {
+  background-color: var(--at-bg);
+}
+
+.at-nav {
+  background: var(--at-header-bg);
 }
