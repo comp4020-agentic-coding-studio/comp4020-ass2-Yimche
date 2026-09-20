@@ -1,0 +1,43 @@
+/*
+ * Catppuccin for the Linux Ricing site.
+ * Latte carries the light theme, Mocha carries the dark one. Each token uses
+ * light-dark(), so the existing nav toggle switches the whole palette between
+ * the two flavours. This file is injected unlayered through brandCss, so it
+ * wins over the theme's own @layer at.tokens defaults.
+ *
+ * Palette values are the official Catppuccin Latte and Mocha hexes.
+ * Only the base inputs and surfaces are set here; the theme derives hover,
+ * active, on-primary, link, and table colours from these with oklch().
+ */
+
+:root {
+  /* Accents. Mauve leads, with pink and blue behind it. */
+  --at-primary: light-dark(#8839ef, #cba6f7);
+  --at-secondary: light-dark(#ea76cb, #f5c2e7);
+  --at-tertiary: light-dark(#1e66f5, #89b4fa);
+
+  /* Surfaces. Latte: base, mantle, white lift. Mocha: base, mantle, surface0. */
+  --at-bg: light-dark(#eff1f5, #1e1e2e);
+  --at-bg-alt: light-dark(#e6e9ef, #181825);
+  --at-bg-elevated: light-dark(#ffffff, #313244);
+
+  /* Text. Latte text and subtexts against Mocha text and subtexts. */
+  --at-text: light-dark(#4c4f69, #cdd6f4);
+  --at-text-secondary: light-dark(#5c5f77, #bac2de);
+  --at-text-muted: light-dark(#6c6f85, #a6adc8);
+
+  /* Lines and code wells, drawn from the surface ramp. */
+  --at-border: light-dark(#ccd0da, #45475a);
+  --at-divider: light-dark(#dce0e8, #313244);
+  --at-code-bg: light-dark(#e6e9ef, #181825);
+
+  /* Status colours mapped onto Catppuccin blue, green, yellow, and red. */
+  --at-info: light-dark(#1e66f5, #89b4fa);
+  --at-info-soft: light-dark(rgb(30 102 245 / 10%), rgb(137 180 250 / 14%));
+  --at-success: light-dark(#40a02b, #a6e3a1);
+  --at-success-soft: light-dark(rgb(64 160 43 / 10%), rgb(166 227 161 / 14%));
+  --at-warning: light-dark(#df8e1d, #f9e2af);
+  --at-warning-soft: light-dark(rgb(223 142 29 / 10%), rgb(249 226 175 / 14%));
+  --at-error: light-dark(#d20f39, #f38ba8);
+  --at-error-soft: light-dark(rgb(210 15 57 / 10%), rgb(243 139 168 / 14%));
+}
