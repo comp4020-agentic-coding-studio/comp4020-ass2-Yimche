@@ -25,6 +25,7 @@ export const siteConfig = defineSiteConfig({
     { text: sessionLabels.plural, href: "/sessions/" },
     { text: "Assessment", href: "/assessments/" },
     { text: "Setup", href: "/setup/" },
+    { text: "Readings", href: "/readings/" },
     { text: "People", href: "/people/" },
     { text: "Policies", href: "/policies/" },
   ],
