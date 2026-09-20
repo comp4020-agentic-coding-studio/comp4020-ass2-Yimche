@@ -11,3 +11,152 @@
  * slide class you reach for (`_class: quote`), a code-heavy layout, a
  * background. */
 @import url("astro-theme-university/styles/deck.css");
+
+/* Visual devices for the week decks.
+ *
+ * The base theme owns colour and layout; everything below is a small,
+ * self-contained diagram a particular lecture reaches for. Structure comes
+ * from classes, never inline styles, so a slide stays plain markup.
+ *
+ * Colours here are content, not brand. Where a slide shows a real scheme
+ * (Catppuccin Mocha, Gruvbox), its own hex values are the whole point of the
+ * slide, so they are named directly, and only here. */
+
+/* Palette swatch strip: the actual colours a scheme ships. */
+.reveal .slides section .swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 1.4rem 0 0.4rem;
+}
+.reveal .slides section .swatches span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: var(--at-border-radius);
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 18%);
+}
+.sw-rosewater { background: #f5e0dc; }
+.sw-mauve { background: #cba6f7; }
+.sw-red { background: #f38ba8; }
+.sw-peach { background: #fab387; }
+.sw-yellow { background: #f9e2af; }
+.sw-green { background: #a6e3a1; }
+.sw-teal { background: #94e2d5; }
+.sw-sky { background: #89dceb; }
+.sw-blue { background: #89b4fa; }
+.sw-lavender { background: #b4befe; }
+.sw-gruv-red { background: #cc241d; }
+.sw-gruv-green { background: #98971a; }
+.sw-gruv-yellow { background: #d79921; }
+.sw-gruv-aqua { background: #689d6a; }
+.sw-gruv-blue { background: #458588; }
+.sw-gruv-purple { background: #b16286; }
+.sw-gruv-orange { background: #d65d0e; }
+
+/* A caption line under any device. */
+.reveal .slides section .cap {
+  color: var(--at-text-secondary);
+  font-size: 0.62em;
+  margin-top: 0.6rem;
+}
+
+/* Layer stack: the desktop as a pile of cooperating programs. */
+.reveal .slides section .layers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 26rem;
+  margin: 1.2rem auto 0;
+}
+.reveal .slides section .layers span {
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--at-border);
+  border-radius: var(--at-border-radius);
+  background: var(--at-bg-elevated);
+  color: var(--at-text);
+  font-size: 0.7em;
+  text-align: left;
+}
+.reveal .slides section .layers span.skin {
+  border-color: var(--at-primary);
+  color: var(--at-primary);
+}
+
+/* Window frames: how a layout policy fills the screen. */
+.reveal .slides section .frames {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.2rem 0 0;
+}
+.reveal .slides section .frame {
+  width: 15rem;
+  height: 9rem;
+  border: 1px solid var(--at-border);
+  border-radius: var(--at-border-radius);
+  background: var(--at-bg-alt);
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.4rem;
+  position: relative;
+}
+.reveal .slides section .frame .win {
+  background: var(--at-primary);
+  opacity: 0.85;
+  border-radius: calc(var(--at-border-radius) / 1.5);
+}
+.reveal .slides section .frame.tiled { grid-template: repeat(2, 1fr) / repeat(2, 1fr); }
+.reveal .slides section .frame.float { display: block; }
+.reveal .slides section .frame.float .win {
+  position: absolute;
+  width: 8rem;
+  height: 5rem;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 35%);
+}
+.reveal .slides section .frame.float .win:nth-child(1) { top: 0.8rem; left: 0.8rem; }
+.reveal .slides section .frame.float .win:nth-child(2) { top: 2.4rem; left: 4rem; opacity: 0.92; }
+.reveal .slides section .frame.float .win:nth-child(3) { top: 3.6rem; left: 6.6rem; opacity: 0.98; }
+.reveal .slides section .frame.sparse { place-content: center; }
+.reveal .slides section .frame.sparse .win { width: 4rem; height: 2.6rem; }
+.reveal .slides section .frame.dense { grid-template: repeat(3, 1fr) / repeat(3, 1fr); }
+
+/* Mock status bar: modules competing for a permanent seat. */
+.reveal .slides section .statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 34rem;
+  margin: 1.4rem auto 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--at-border);
+  border-radius: var(--at-border-radius);
+  background: var(--at-bg-elevated);
+  font-size: 0.62em;
+  color: var(--at-text);
+}
+.reveal .slides section .statusbar .mods {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.reveal .slides section .statusbar .ws {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  background: var(--at-primary);
+}
+.reveal .slides section .statusbar .ws.off { background: var(--at-border); }
+
+/* Headline figure for a single, uncomfortable number. */
+.reveal .slides section .stat {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--at-heading-color, var(--at-primary));
+  margin: 1rem 0 0.3rem;
+}

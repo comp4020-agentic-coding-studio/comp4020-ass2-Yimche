@@ -31,6 +31,13 @@ Capture the setup so perfectly that configuration is over forever.
 - symlink farms
 - Nix and home-manager, the whole environment declared once and rebuilt anywhere
 
+```nix
+# home.nix, the desktop as a build artefact
+home.packages = with pkgs; [ hyprland waybar kitty ];
+wayland.windowManager.hyprland.enable = true;
+programs.git.enable = true;
+```
+
 ---
 
 {/* _class: impact */}
