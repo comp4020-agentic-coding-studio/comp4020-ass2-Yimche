@@ -1,19 +1,41 @@
 ---
+import BaseLayout from "astro-theme-university/layouts/BaseLayout.astro";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
-import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
+
+const title = `${courseMeta.code}: ${courseMeta.title}`;
+// The home page renders its own terminal hero rather than the theme's image
+// Hero, so it drives BaseLayout directly. Home lives at "/", where the theme's
+// card-title transition name collapses to this constant; matching it keeps the
+// shared-element transition running when you arrive from the nav wordmark.
+const transitionName = "card-title-";
 ---
 
-<ContentLayout
-  title={`${courseMeta.code}: ${courseMeta.title}`}
+<BaseLayout
+  title={title}
   description={courseMeta.description}
-  heroImage={heroImage}
-  heroImageAlt="A desktop reduced to flat gold and black shapes, a tiled window grid and a single status bar sweeping across the frame, in a two-ink risograph print"
   {...siteConfig}
+  mainAttrs={{ class: "page-home" }}
 >
+  <section class="term-hero" slot="hero" aria-label={title}>
+    <div class="term-window">
+      <div class="term-bar" aria-hidden="true">
+        <span class="term-dots"></span>
+        <span class="term-bar-name">~/{courseMeta.code.toLowerCase()}</span>
+      </div>
+      <div class="term-hero-body">
+        <p class="term-cmd">
+          <span class="term-prompt">❯</span> ./ricing.sh<span class="term-cursor" aria-hidden="true"></span>
+        </p>
+        <h1 class="term-hero-title" transition:name={transitionName}>{title}</h1>
+      </div>
+    </div>
+  </section>
+
+  <p class="lead">{courseMeta.description}</p>
+
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
@@ -41,7 +63,7 @@ import { sessionLabels, siteConfig } from "../site-config";
     students who have admired a screenshot and wondered what it would take to
     earn one. You should be comfortable on the Linux command line and with git.
     You do not need a design background; you do need a willingness to defend
-    your choices out loud, every week, to a room.
+    your choices out loud and in writing.
   </p>
 
   <h2>Where to go next</h2>
@@ -59,7 +81,7 @@ import { sessionLabels, siteConfig } from "../site-config";
       <p>Who teaches the course and how to reach them.</p>
     </Card>
   </CardGrid>
-</ContentLayout>
+</BaseLayout>
 
 <style>
   .course-tags {

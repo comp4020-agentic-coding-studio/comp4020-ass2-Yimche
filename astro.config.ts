@@ -41,6 +41,7 @@ export default defineConfig({
         "/src/styles/catppuccin.css",
         "/src/styles/typography.css",
         "/src/styles/shape.css",
+        "/src/styles/terminal.css",
       ],
       imageFormat: "avif",
       llmsTxt: true,
